@@ -11,17 +11,18 @@ joblib==1.5.1
 MarkupSafe==3.0.2
 mpmath==1.3.0
 networkx==3.5
-numpy @ file:///D:/bld/bld/rattler-build_numpy_1753401558/work/dist/numpy-2.3.2-cp313-cp313-win_amd64.whl#sha256=2849ac570610ca99451d85ae850479e1d2a10fffdc8a92b1e1c172cca0f6f83b
-pandas @ file:///D:/bld/pandas_1752081728114/work
-python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_python-dateutil_1751104122/work
-pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1742920838005/work
+numpy==2.3.2
+pandas==2.3.1
+pip==25.1.1
+python-dateutil==2.9.0.post0
+pytz==2025.2
 scikit-learn==1.7.1
 scipy==1.16.0
 setuptools==80.9.0
-six @ file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_six_1753199211/work
+six==1.17.0
 sympy==1.14.0
 threadpoolctl==3.6.0
 torch==2.7.1
 typing_extensions==4.14.1
-tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1742745135198/work
+tzdata==2025.2
 Werkzeug==3.1.3
