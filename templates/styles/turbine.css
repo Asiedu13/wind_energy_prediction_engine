@@ -1,0 +1,83 @@
+ /* Wind Turbine Component Styles */
+.wind-turbine-section {
+    background: white;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.turbine {
+    position: relative;
+    width: 100px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.base {
+    width: 10px;
+    height: 120px;
+    background: #555;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hub {
+    width: 20px;
+    height: 20px;
+    background: #777;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.blades {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center;
+    animation: spin 0s linear infinite;
+}
+
+.blade {
+    width: 4px;
+    height: 40px;
+    background: #222;
+    position: absolute;
+    left: 50%;
+    transform-origin: bottom center;
+}
+
+.blade:nth-child(1) { transform: rotate(0deg) translateX(-50%); }
+.blade:nth-child(2) { transform: rotate(120deg) translateX(-50%); }
+.blade:nth-child(3) { transform: rotate(240deg) translateX(-50%); }
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.controls {
+    margin-top: 30px;
+}
+
+input[type="range"] {
+    width: 80%;
+    max-width: 300px;
+}
+
+.speed-label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00796b;
+}
