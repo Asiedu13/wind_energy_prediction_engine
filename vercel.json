@@ -6,6 +6,9 @@
             "use": "@vercel/python"
         }
     ],
+    "config": {
+	"maxLambdaSize": "2000mb"
+	},
     "routes": [
         {
             "src": "/(.*)",
